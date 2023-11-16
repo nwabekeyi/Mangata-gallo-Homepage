@@ -1,0 +1,175 @@
+body {
+  margin: 30px auto;
+  background-color: rgb(233, 222, 222);
+  font-family: sans-serif;
+  width: 80vw;
+  
+}
+
+header > div {
+  display:block;
+  width: 500px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+header > div > img{
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+nav{
+  display: flex;
+  background-color: black;
+
+}
+
+nav ul{
+  margin: 10px;
+  display: flex;
+  
+}
+  
+li a{
+  margin-inline: 100px;
+  text-decoration:none;
+  color: white;
+}
+
+section {
+  display: flex;
+  margin: 30px auto;
+}
+
+article{
+  flex: 1;
+  margin-inline: 5px;
+  background-color: white;
+ }
+
+
+#banner {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+  height: 200px; 
+  overflow: hidden;
+  min-width: 80vw;
+
+}
+#banner > img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+figcaption {
+  position: absolute;
+  bottom: 0;
+  top: 120px;
+  left: 0px;
+  right: 380px;
+  padding: 5px;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+} 
+.product-order-contact{
+  width: 100%;
+  height: 200px; 
+  overflow: hidden;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+}
+footer div{
+  flex: 1;
+}
+footer img{
+  width: 150px;
+  height: 50px;
+}
+hr{
+  color: black;
+}
+nav, article, #banner{
+  border-radius: 15px;
+}
+h3{
+  margin-left: 25px;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+#footer-logo{
+  
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 80px;
+  overflow: hidden;
+}
+#footer-logo > img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+}
+a:hover{
+  border: 2px solid #0d6efd;
+  border-radius: 5px;
+  padding: 5px;
+}
+a:active{
+  padding: 5px;
+  background-color: #0d6efd;
+}
+#Copyright p{
+  text-align: right;
+}
+#Copyright div{
+  margin-top: 35px;
+  border-bottom: 1px solid black;
+}
+.card-text, figcaption{
+  text-align: justify;
+}
+.card-body .card-text3{
+  display: inline-block;
+  margin-bottom: 63px;
+}
+@media only screen and (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+    margin: 10px;
+    display: flex;
+  }
+  section {
+    display: flex;
+    flex-direction: column; 
+    margin: 30px auto;
+  }
+  figcaption {
+    position: absolute; 
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+  #banner {
+    position: relative;
+    height: auto; 
+    min-width: 100%;
+  }
+  header > div{
+    height: auto;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
